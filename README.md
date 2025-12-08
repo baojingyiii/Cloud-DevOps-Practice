@@ -28,7 +28,7 @@ text
 ### 1. 环境准备
 ​```bash
 # 克隆项目
-git clone https://github.com/yourusername/Cloud-DevOps-Practice.git
+git clone https://github.com/baojingyiii/Cloud-DevOps-Practice.git
 cd Cloud-DevOps-Practice
 # 执行自动化安装脚本
 chmod +x scripts/install-k8s.sh
@@ -40,17 +40,9 @@ chmod +x scripts/install-k8s.sh
 详细步骤见 docs/03-gitlab-ci-cd-setup.md
 
 📸 项目成果展示
-Kubernetes Dashboard
-https://screenshots/k8s-dashboard.png
-
-GitLab CI/CD流水线
-https://screenshots/gitlab-pipeline.png
-
-Grafana监控面板
-https://screenshots/grafana-dashboard.png
 
 🔧 故障排查
-常见问题及解决方案见 docs/06-troubleshooting.md
+常见问题及解决方案
 
 📚 学习资料
 Kubernetes官方文档
@@ -62,11 +54,3 @@ Prometheus监控指南
 📄 许可证
 MIT License
 
-text
-
-## 三、GitHub上传步骤
-### 步骤1：创建GitHub仓库
-​```bash
-# 在GitHub网页端创建新仓库
-# 或者使用命令行
-curl -u 'yourusername' https://api.github.com/user/repos -d '{"name":"Cloud-DevOps-Practice","description":"A complete DevOps practice platform with Kubernetes, CI/CD, and monitoring"}'
