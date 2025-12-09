@@ -1,0 +1,17 @@
+gitlabUrl: https://gitlab.com/
+runnerRegistrationToken: "GR1348941KenfquNEcSwsydUm9xex"
+runners:
+  config: |
+    [[runners]]
+      [runners.kubernetes]
+        namespace = "{{.Release.Namespace}}"
+        image = "centos:7.9"
+  tags: "k8s-runner"
+  executor: kubernetes
+resources:
+  limits:
+    memory: 512Mi
+    cpu: 500m
+  requests:
+    memory: 256Mi
+    cpu: 200m
