@@ -7,10 +7,11 @@
 - 建立完善的监控告警体系
 - 实践微服务在K8s上的部署与管理
 ## 🏗️ 技术架构
-`用户请求 → Nginx Ingress → Spring Boot微服务 → MySQL/Redis
-↑ ↑
-监控平台(Prometheus+Grafana) CI/CD流水线(GitLab CI+Argo CD)`
-
+```
+用户请求 → Nginx Ingress → Spring Boot微服务 → MySQL/Elasticsearch
+    ↑                              ↑
+监控平台(Prometheus+Grafana)      CI/CD流水线(GitLab CI+Argo CD)
+```
 
 ## 🛠️ 技术栈
 - **容器编排**: Kubernetes 1.25.5 + containerd
