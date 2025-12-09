@@ -75,21 +75,21 @@ EOF
 bash
 
 ```
-# 卸载旧版本
+### 卸载旧版本
 yum remove -y docker
 
-# 安装依赖
+### 安装依赖
 yum install -y yum-utils device-mapper-persistent-data lvm2
 
-# 添加阿里云Docker仓库
+### 添加阿里云Docker仓库
 #yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-# 添加Docker仓库
+### 添加Docker仓库
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
-# 安装指定版本Docker
+### 安装指定版本Docker
 yum install -y docker-ce-20.10.23 docker-ce-cli-20.10.23 containerd.io
 
-# 配置Docker
+### 配置Docker
 mkdir -p /etc/docker
 cat > /etc/docker/daemon.json << EOF
 {
@@ -106,6 +106,6 @@ cat > /etc/docker/daemon.json << EOF
 }
 EOF
 
-# 启动Docker
+### 启动Docker
 systemctl daemon-reload
 systemctl enable --now docker
